@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">辟谣小助手</string>
+    <string name="service_label">辟谣小助手：视频号真假提醒</string>
+    <string name="service_description">看微信视频号时，辟谣小助手会读取屏幕上的文字并截图，发给你设置的 AI 服务，判断视频是不是谣言、AI 合成或卖货骗局，然后在屏幕上显示结论，可疑时用语音提醒。只在视频号页面截图，不读取聊天内容。</string>
+    <string name="intro">奶奶在微信视频号看视频时，屏幕边上会出现一个小标签，告诉她这个视频靠不靠谱；可疑的视频会用语音提醒，想转发时还会再劝一次。请按下面三步设置好。</string>
+    <string name="restricted_hint">如果在无障碍设置里开关是灰色的、打不开：先点下面的“打开本应用信息页”，点右上角“⋮”，选“允许受限制的设置”，再回去打开。小米、OPPO、vivo、华为、荣耀等手机还要在应用信息里允许“自启动”，并在最近任务里把本应用锁住，防止被系统关掉。</string>
+    <string name="ai_hint">需要一个 AI 服务的 API Key。推荐阿里云百炼：打开 bailian.console.aliyun.com 注册，在“API Key”页面创建一个，复制到这里。默认模型 qwen3.7-flash 很便宜，大约每个视频 0.1～0.5 分钱；在百炼控制台复制的“专属域名”也可以填到接口地址里。</string>
+    <string name="finder_hint">辟谣小助手靠微信界面名里的这个词认出视频号页面（默认 finder）。如果打开视频号后小标签不出现，看上面“最近的微信界面”显示的名字，把视频号页面名里的关键词填到这里。</string>
+</resources>

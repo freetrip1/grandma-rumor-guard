@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand">#C62828</color>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/brand</item>
+        <item name="android:colorAccent">@color/brand</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+
+    <style name="Wide">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Title" parent="Wide">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#212121</item>
+    </style>
+
+    <style name="Body" parent="Wide">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="Section" parent="Wide">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/brand</item>
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="Status" parent="Wide">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="Hint" parent="Wide">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#757575</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:lineSpacingMultiplier">1.15</item>
+    </style>
+
+    <style name="Label" parent="Wide">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:layout_marginTop">14dp</item>
+    </style>
+
+    <style name="Field" parent="Wide">
+        <item name="android:textSize">16sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Action" parent="Wide">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="Choice" parent="Wide">
+        <item name="android:textSize">16sp</item>
+        <item name="android:minHeight">44dp</item>
+    </style>
+</resources>

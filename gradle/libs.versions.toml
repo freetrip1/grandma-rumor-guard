@@ -1,0 +1,11 @@
+[versions]
+androidGradlePlugin = "9.4.1"
+junit = "4.13.2"
+orgJson = "20260814"
+
+[libraries]
+junit = { module = "junit:junit", version.ref = "junit" }
+org-json = { module = "org.json:json", version.ref = "orgJson" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }

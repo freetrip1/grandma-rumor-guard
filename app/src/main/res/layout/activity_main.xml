@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView style="@style/Title" android:text="@string/app_name" />
+        <TextView style="@style/Body" android:text="@string/intro" />
+
+        <TextView style="@style/Section" android:text="第一步：打开服务" />
+        <TextView android:id="@+id/service_status" style="@style/Status" />
+        <Button android:id="@+id/open_accessibility" style="@style/Action" android:text="打开无障碍设置" />
+        <TextView style="@style/Hint" android:text="@string/restricted_hint" />
+        <Button android:id="@+id/open_app_info" style="@style/Action" android:text="打开本应用信息页" />
+        <Button android:id="@+id/battery" style="@style/Action" android:text="允许后台运行（忽略电池优化）" />
+
+        <TextView style="@style/Section" android:text="第二步：语音" />
+        <TextView android:id="@+id/tts_status" style="@style/Status" />
+        <Button android:id="@+id/test_voice" style="@style/Action" android:text="试听语音" />
+        <Button android:id="@+id/open_tts" style="@style/Action" android:text="打开文字转语音设置" />
+        <TextView style="@style/Label" android:text="怎么称呼她" />
+        <EditText android:id="@+id/call_name" style="@style/Field" android:hint="奶奶" android:inputType="text" />
+        <TextView style="@style/Label" android:text="什么时候说话" />
+        <RadioGroup android:id="@+id/speak_mode" style="@style/Wide" android:orientation="vertical">
+            <RadioButton android:id="@+id/speak_warnings" style="@style/Choice" android:text="只在视频可疑时说（推荐）" />
+            <RadioButton android:id="@+id/speak_all" style="@style/Choice" android:text="每个视频都说" />
+            <RadioButton android:id="@+id/speak_never" style="@style/Choice" android:text="不说话，只在屏幕上显示" />
+        </RadioGroup>
+        <CheckBox android:id="@+id/slow_speech" style="@style/Choice" android:text="说慢一点" />
+
+        <TextView style="@style/Section" android:text="第三步：AI 服务" />
+        <TextView style="@style/Hint" android:text="@string/ai_hint" />
+        <TextView style="@style/Label" android:text="API Key" />
+        <EditText android:id="@+id/api_key" style="@style/Field" android:hint="sk-…" android:inputType="textPassword" />
+        <TextView style="@style/Label" android:text="接口地址（OpenAI 兼容）" />
+        <EditText android:id="@+id/base_url" style="@style/Field" android:inputType="textUri" />
+        <TextView style="@style/Label" android:text="看图模型（要能看图片）" />
+        <EditText android:id="@+id/vision_model" style="@style/Field" android:inputType="text" />
+        <TextView style="@style/Label" android:text="核实模型（联网搜索用）" />
+        <EditText android:id="@+id/check_model" style="@style/Field" android:inputType="text" />
+        <CheckBox android:id="@+id/web_search" style="@style/Choice" android:text="上网核实说法（只支持阿里云百炼，推荐打开）" />
+        <CheckBox android:id="@+id/deep_thinking" style="@style/Choice" android:text="深度思考（更准，但更慢、更贵）" />
+        <TextView style="@style/Label" android:text="每天最多分析几个视频（防止花钱太多）" />
+        <EditText android:id="@+id/daily_limit" style="@style/Field" android:inputType="number" />
+        <Button android:id="@+id/save" style="@style/Action" android:text="保存设置" />
+        <Button android:id="@+id/test_ai" style="@style/Action" android:text="用一条示例谣言测试 AI" />
+        <TextView android:id="@+id/test_result" style="@style/Body" android:textIsSelectable="true" />
+
+        <TextView style="@style/Section" android:text="运行情况" />
+        <TextView android:id="@+id/diagnostics" style="@style/Body" android:textIsSelectable="true" />
+
+        <TextView style="@style/Section" android:text="高级" />
+        <TextView style="@style/Label" android:text="视频号界面关键词" />
+        <EditText android:id="@+id/finder_keyword" style="@style/Field" android:inputType="text" />
+        <TextView style="@style/Hint" android:text="@string/finder_hint" />
+        <CheckBox android:id="@+id/watch_miniprogram" style="@style/Choice" android:text="也盯着小程序里的视频（票圈等老人常看的）" />
+        <CheckBox android:id="@+id/watch_all_apps" style="@style/Choice" android:text="任何App里有视频在播就检测（抖音/快手等；通话、支付、系统界面会自动跳过）" />
+    </LinearLayout>
+</ScrollView>
